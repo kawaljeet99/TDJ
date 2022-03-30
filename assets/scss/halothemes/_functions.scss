@@ -5,7 +5,7 @@
     position: fixed;
     right: 10px;
     top: auto;
-    bottom: 125px;
+    bottom: 30px;
     z-index: 98;
     width: 100%;
     max-width: 40px;
@@ -61,7 +61,7 @@
     @media (min-width: 551px){
         max-width: 220px;
         overflow: hidden;
-        bottom: 90px;
+        bottom: 30px;
 
         .ask-an-expert-link{
             img{
@@ -77,8 +77,8 @@
     }
 
     @media (min-width: 1025px){
-        right: 30px;
-        bottom: 30px;
+        left: 20px;
+        bottom: 20px;
 
         .ask-an-expert-link{
             overflow: hidden;
