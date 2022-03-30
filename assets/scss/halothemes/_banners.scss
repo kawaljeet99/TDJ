@@ -1,7 +1,7 @@
 // Home Custom Text
 // -----------------------------------------------------------------------------
 .halo-custom-text{
-	padding: 0 0 50px 0;
+	padding: 50px 0 0 0;
 
 	.halo-special-logo{
 		position: relative;
@@ -36,21 +36,11 @@
 		padding: 0;
 		position: relative;
 
-		&:before{
-			content: "";
-		    position: absolute;
-		    top: -65px;
-		    left: 50%;
-		    width: 1px;
-		    height: 40px;
-		    background-color: $header-font-color;
-		    z-index: 1;
-		}
 	}
 
 	@media (min-width: 551px){
-		padding-top: 160px;
-		padding-bottom: 70px;
+		// padding-top: 160px;
+		// padding-bottom: 70px;
 
 		.halo-special-logo{
 			position: absolute;
@@ -66,11 +56,6 @@
 			}
 		}
 
-		.halo-special-text{
-			&:before{
-				top: -50%;
-			}
-		}
 
 		.page-no-carousel &{
 			padding-top: 50px;
@@ -86,22 +71,16 @@
 	}
 
 	@media (min-width: 768px){
-		padding-top: 175px;
+		// padding-top: 175px;
 
 		.halo-special-logo{
 			top: -275px;
 		}
 
-		.halo-special-text{
-			&:before{
-				height: 65px;
-				top: calc(-100% - 3px);
-			}
-		}
 	}
 
 	@media (min-width: 992px){
-		padding-top: 200px;
+		// padding-top: 200px;
 
 		.halo-special-logo{
 			top: -340px;
@@ -115,7 +94,7 @@
 	}
 
 	@media (min-width: 1025px){
-		padding-bottom: 112px;
+		// padding-bottom: 112px;
 
 		.halo-special-logo{
 			top: -350px;
@@ -134,7 +113,7 @@
 	}
 
 	@media (min-width: 1400px){
-		padding-top: 230px;
+		// padding-top: 230px;
 
 		.halo-special-logo{
 			top: -400px;
@@ -1359,7 +1338,13 @@
     		letter-spacing: $letterSpacing-base;
     		line-height: 1.75;
     		color: $color-textSecondary;
-    		margin: 0 0 42px 0;
+			margin: auto;
+    		margin-bottom: 42px;
+
+			@media (min-width: 551px){
+				margin: 0 0 42px 0;
+				max-width: 450px;
+			}
     	}
 
     	.button{
@@ -1481,7 +1466,7 @@
 
 		&--content{
 			text-align: left;
-			max-width: 450px;
+			max-width: 500px;
 		}
 
 		&.halo-middle-banner-2{

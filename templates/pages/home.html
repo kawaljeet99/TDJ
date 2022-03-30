@@ -23,13 +23,53 @@ blog:
         {{> components/common/alert/alert-info message}}
     {{/each}}
 <div class="main full">
-    {{> components/halothemes/home/halo-banners banner="home-custom-text"}}
 
-    {{> components/halothemes/home/halo-banners banner="home-top-banner"}}
+    <!-- KJ Custom Text below carousel -->
+    <div id="halo-custom-text" class="halo-marketing-banners">
+        <div class="halo-block halo-custom-text">
+            <div class="container">
+                <div class="halo-block-content">
+                    <p class="halo-special-text">Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin felis. Pellentesque diam elementum et lobortis at, mollis duto an risus. Sedcuman des faucibus sullamcorper mattis fusce de molestie elit a lorem tempus scelerisque blandit est cursus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- KJ Custom Text below carousel  -->
 
-    {{> components/halothemes/home/halo-banners banner="home-top-brand"}}
+    <!-- KJ create your own ring section -->
+    <div id="halo-middle-banner-1" class="halo-marketing-banners">
+        <div class="halo-block halo-banners">
+            <div class="container">
+                <div class="halo-block-content">
+                    <div class="halo-middle-banner">
+                        <div class="halo-middle-banner--left">
+                            <div class="halo-middle-banner--content">
+                                <span class="subtitle">FEATURED COLLECTION</span>
+                                <h2 class="title">Create your own ring</h2>
+                                <span class="desc">Nullam aliquet vestibulum augue non varius. Cras cosmo congue delos melitos. Duis tristique del ante le maliquam. Praesent murna de tellus laoreet an cosmopolis.</span>
+                                <a class="button button--secondary button--transparent-2" href="https://truediamondjewelry.com/engagement-rings/semi-mounts-only-settings/">Start with setting</a>
+                                <a class="button button--secondary button--transparent-2" href="https://truediamondjewelry.com/engagement-rings/loose-diamonds/">Start with diamond</a>
+                            </div>
+                        </div>
+                        <div class="halo-middle-banner--right">
+                            <a class="halo-middle-banner--image" href="https://truediamondjewelry.com/engagement-rings/semi-mounts-only-settings/">
+                                <img class="lazyload" src="https://alita-bridal-demo.mybigcommerce.com/content/loading.svg" data-src="https://cdn11.bigcommerce.com/s-ii7zzr3/product_images/uploaded_images/customjewelry.jpg" alt="Create your own ring" title="Create your own ring">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- KJ create your own ring section -->
 
-    {{> components/halothemes/home/halo-banners banner="home-image-gallery"}}
+    {{> components/halothemes/home/halo-banners banner="halo-home-custom-text"}}
+
+    {{> components/halothemes/home/halo-banners banner="halo-home-top-banner"}}
+
+    {{> components/halothemes/home/halo-banners banner="halo-home-top-brand"}}
+
+    {{> components/halothemes/home/halo-banners banner="halo-home-image-gallery"}}
 
     {{#if theme_settings.home_product_block-1 '==' 'Featured'}}
         {{> components/products/featured
