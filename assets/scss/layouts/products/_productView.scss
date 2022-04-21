@@ -70,7 +70,7 @@
     }
 
     @media (min-width: 1025px){
-        width: calc(100% - 500px);
+        width: calc(100% - 600px);
     }
 }
 
@@ -97,7 +97,7 @@
     }
 
     @media (min-width: 1025px){
-        width: 500px;
+        width: 600px;
     }
 }
 
@@ -166,11 +166,11 @@
             left: 50%;
             display: inline-block;
             vertical-align: top;
-            height: 100%;
+            // height: 100%;
             width: 100%;
             max-width: none;
             transform: translate(-50%, -50%);
-            object-fit: cover;
+            object-fit: contain;
 
             &.lazyload,
             &.lazyloading{
@@ -420,7 +420,7 @@
             vertical-align: top;
             transform: translate(-50%, -50%);
             transition: $anchor-transition;
-            object-fit: cover;
+            object-fit: contain;
 
             &.lazyload,
             &.lazyloading{

@@ -1302,8 +1302,10 @@
 	&--right{
 		display: block;
 		width: 100%;
+		max-width: 500px;
 		padding: 0;
-		margin: 55px 0 0 0;
+		margin: auto;
+		margin-top: 55px;
 	}
 
 	&--content{
@@ -1340,8 +1342,9 @@
     		color: $color-textSecondary;
 			margin: auto;
     		margin-bottom: 42px;
+			max-width: 500px;
 
-			@media (min-width: 551px){
+			@media (min-width: 900px){
 				margin: 0 0 42px 0;
 				max-width: 450px;
 			}
@@ -1451,7 +1454,7 @@
 		padding: 0;
 	}
 
-	@media (min-width: 551px){
+	@media (min-width: 900px){
 		flex-wrap: nowrap;
 
 		&--left{
@@ -1461,7 +1464,8 @@
 
 		&--right{
 			width: calc(50% - 15px);
-			margin-top: 0;
+			margin-top: auto;
+			max-width: 100%;
 		}
 
 		&--content{
@@ -1677,6 +1681,11 @@
 		max-width: 585px;
 		padding: 0;
 		margin: 0;
+
+		.kj-bottom-banner--list-heading {
+			margin-top: 0.75rem;
+			margin-bottom: 1rem;
+		}
 	}
 
 	&--list{
@@ -1722,13 +1731,18 @@
 		&--item{
 			width: 50%;
 
+			.kj-bottom-banner--list-heading {
+				margin-top: 0.75rem;
+				margin-bottom: 1rem;
+			}
+
 			&.halo-bottom-banner--left{
 				padding-right: 5px;
 
 				.halo-bottom-banner--listWrapper{
 					margin-left: auto;
 					margin-right: 0;
-					padding-top: 36px;
+					padding-top: 45px;
 				}
 			}
 
@@ -1742,8 +1756,8 @@
 				.halo-bottom-banner--listWrapper{
 					margin-left: 0;
 					margin-right: auto;
-					padding-top: 82px;
-					padding-bottom: 47px;
+					padding-top: 45px;
+					padding-bottom: 72px;
 				}
 			}
 		}

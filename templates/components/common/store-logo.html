@@ -1,4 +1,4 @@
-<a href="{{urls.home}}" class="header-logo__link">
+<!-- <a href="{{urls.home}}" class="header-logo__link">
     {{#if settings.store_logo.image}}
         {{#if theme_settings.logo_size '===' 'original'}}
             <img class="header-logo-image-unknown-size" src="{{getImage settings.store_logo.image 'logo_size'}}" alt="{{settings.store_logo.title}}" title="{{settings.store_logo.title}}">
@@ -10,4 +10,11 @@
     {{else}}
         <span class="header-logo-text">{{settings.store_logo.title}}</span>
     {{/if}}
+</a> -->
+
+<a href="{{urls.home}}" class="header-logo__link">
+    <span class="header-logo-image-container">
+        <svg class="icon header-logo-image"><use xlink:href="#icon-main-logo"></use></svg>
+    </span>   
 </a>
+

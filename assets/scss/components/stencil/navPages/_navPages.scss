@@ -33,7 +33,8 @@
 // -----------------------------------------------------------------------------
 
 .navPages {
-    background-color: $header-bg;
+    background-color: transparent;
+    // background-color: $header-bg;
     width: 100%;
     height: 100%;
     padding: 0;
@@ -74,10 +75,11 @@
             font-size: $fontSize-root + 2px;
             font-weight: $fontWeight-normal;
             letter-spacing: $letterSpacing-base;
-            color: stencilColor('navPages-color');
+            color: #e6e6e6;
+            // color: stencilColor('navPages-color');
             padding: 10px 0;
             text-decoration: none;
-            text-transform: capitalize;
+            text-transform: uppercase;
             background-color: transparent;
             transition: unset;
 
@@ -197,7 +199,8 @@
 
             &:hover{
                 > .navPages-action{
-                    color: stencilColor('navPages-color-hover');
+                    color: #ffffff;
+                    // color: stencilColor('navPages-color-hover');
                     
                     .text{
                         background-image: linear-gradient(transparent 97%, stencilColor('navPages-color-hover') 3%);
